@@ -1,0 +1,624 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+
+body{
+  background-color: rgb(50, 50, 51,0.3);
+  margin: 0;
+}
+
+.fw-bolder{
+  color: #f0f0f0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Login Page */
+
+.login-pg{
+  background:  url('../images/banners/bg.jpeg') top right;
+  background-size: cover;
+  background-repeat:inherit;
+  height: 100vh;
+ 
+
+}
+
+/* add password hide and show icon */
+
+.password__icon {
+    position: absolute;
+    right: 0;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+/* backgroun grey */
+
+.bg-grey-light {
+    background: #f0f0f0;
+}
+
+.bg-grey-light:focus {
+    background: #f0f0f0;
+}
+
+@media (min-width: 1024px) {
+
+  .ball {
+    overflow: hidden;
+    transition: margin 1s;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0px 10px 6px rgba(3, 107, 21, 0.5);
+    background-image:  url('../images/persons/shamseer.png'); 
+}
+
+.ball.login {
+    margin-left: 50%;
+    margin-top: 10%;
+   
+}
+
+.ball.register {
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+
+    /* register form active */
+    .register__form.active {
+        margin-left: 10% !important;
+        opacity: 1;
+    }
+    /* login form active */
+    .login__form.active {
+        opacity: 1;
+        margin-left: 10% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .container .col-12.p-5 {
+        padding: 0px !important;
+    }
+    body {
+        overflow-x: hidden;
+    }
+}
+
+
+/* register default */
+
+.register__form {
+    width: 100%;
+    height: 100vh; 
+    opacity: 0;
+    transition: margin 1s, opacity .5s;
+    z-index: 1;
+}
+
+
+/* register form active */
+
+.register__form.active {
+    margin-left: 0%;
+    opacity: 1;
+}
+
+
+/* login form default */
+
+.login__form {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    margin-left: -100%;
+    opacity: 0;
+    transition: margin 1s, opacity .5s;
+    z-index: 1;
+}
+
+/* login form active */
+
+.login__form.active {
+    opacity: 1;
+    margin-left: 0%;
+}
+
+
+/* Sidebar*/
+
+
+
+
+/*Mixing*/
+/*Mixing*/
+/*Mixing*/
+/*Mixing*/
+/*Mixing*/
+/*Mixing*/
+
+
+
+.wrapper {
+    display: inline-block;
+    margin-top: 50px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 0px;
+    width: 100%;
+    
+}
+
+.custom-bg{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding: 10px;
+    height: auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    box-shadow: 2px 2px  .6em rgba(5, 5, 5, 0.7);
+    border: black;
+    
+}
+
+.main-title{
+  color: white;
+  font-family:cursive;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+ 
+}
+
+.modal-title{
+  width: 100%;
+  text-align: center;
+}
+
+.custom-form{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.dash-icon-1{
+    color: yellow;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+
+.dash-icon-2{
+    color: green;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+
+.dash-icon-3{
+    color: red;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+
+.custom-border-dash-icon{
+    box-shadow: 2px 2px  .4em rgb(255, 255, 255,0.4);
+    border: black;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.icon-bg{
+    font-size: 50px;
+}
+
+.custom-border{
+    box-shadow: 2px 2px  .4em rgb(255, 255, 255,0.4);
+    border: black;
+
+}
+
+
+
+
+
+.cal-date-widget .cal-info1 {
+    margin-top: 40px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%; }
+.cal-date-widget .cal-info1 h2 {
+    font-size: 100px;
+    color: #115704;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 0.7; }
+  .cal-date-widget .cal-info1 span {
+    font-size: 18px; }
+  .cal-date-widget .cal-info1 p {
+    color: #999;
+    margin-top: 15px; }
+
+
+/* Clock widget*/
+
+
+.mobile-clock-widget .sec, .min, .hour {
+  position: absolute;
+  width: 24px;
+  height: 234px;
+  top: 0;
+  left: 102px;
+  margin-top: -30px;
+  margin-left: -25px; }
+
+
+.mobile-clock-widget {
+  background: url(../images/mobile-clock-wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  color: #fff;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-blend-mode: overlay;
+  background-color: #17433b;
+  position: relative; }
+  .mobile-clock-widget .bg-svg {
+    position: absolute;
+    top: -4px;
+    left: -25px; }
+    .mobile-clock-widget .bg-svg svg {
+      width: 150px;
+      height: 150px;
+      opacity: 0.08; }
+  .mobile-clock-widget .clock {
+    padding: 0;
+    position: relative;
+    list-style: none;
+    margin: 0 auto;
+    height: 175px;
+    width: 175px;
+    display: block;
+    background: url(../images/clock-face.png) 5% center no-repeat; }
+  .mobile-clock-widget .sec {
+    background: url(../images/sec.svg);
+    z-index: 3; }
+  .mobile-clock-widget .min {
+    background: url(../images/min.svg);
+    z-index: 2; }
+  .mobile-clock-widget .hour {
+    background: url(../images/hour.svg);
+    z-index: 1; }
+
+.mobile-clock-widget #date {
+  margin-top: 30px;
+  font-weight: 700; }
+
+.mobile-clock-widget p {
+  font-weight: 600; }
+  
+  
+
+
+
+
+
+.media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+
+
+.card {
+  margin-bottom: 30px;
+  border: 1px solid #e6edef;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  border-radius: 0;
+  background-color: #fff; }
+ 
+
+
+
+
+
+.static-top-widget:hover .icon-bg {
+  -webkit-transform: rotate(-5deg) scale(1.1);
+          transform: rotate(-5deg) scale(1.1);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  
+  
+ }
+
+.static-top-widget div.align-self-center svg {
+  width: 30px;
+  height: 30px; }
+
+.static-top-widget .media-body {
+  -ms-flex-item-align: center !important;
+      align-self: center !important;
+  padding-left: 30px; }
+  .static-top-widget .media-body .icon-bg {
+    position: absolute;
+    right: -14px;
+    top: 6px;
+    opacity: 0.2;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    width: 100px;
+    height: 100px;
+      
+}
+  
+
+
+.static-top-widget span {
+  font-weight: 500; }
+
+.static-top-widget h4 {
+  font-weight: 600; }
+
+.bg-danger .media.static-top-widget .align-self-center {
+  background-color: #d22d3d; }
+
+
+.media-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
+
+/* Weather-widget */
+
+
+.weather-widget-two {
+  background: url(../images/weather_bg.jpg);
+  position: relative;
+  background-color: #24695c;
+  height: 350px;
+  overflow: hidden; }
+  .weather-widget-two p {
+    color: #fff; }
+  .weather-widget-two .card-body .media {
+    margin-bottom: 10px; }
+  .weather-widget-two svg path.climacon_component-stroke {
+    fill: #fff; }
+  .weather-widget-two .top-bg-whether {
+    position: absolute;
+    top: -50px;
+    right: -28px;
+    opacity: 0.1; }
+    .weather-widget-two .top-bg-whether svg {
+      width: 200px;
+      height: 200px; }
+  .weather-widget-two .num {
+    font-weight: 600; }
+  .weather-widget-two .climacon_component-stroke {
+    stroke: #fff; }
+  .weather-widget-two .bottom-whetherinfo svg {
+    width: 150px;
+    height: 150px;
+    opacity: 0.1;
+    color: #fff;
+    position: relative;
+    top: 0;
+    left: -35px; }
+  .weather-widget-two .bottom-whetherinfo .whether-content {
+    text-align: right;
+    position: relative;
+    top: -15px;
+    color: #fff; }
+
+
+
+
+
+
+
+  
+/*footer*/
+.site-footer {
+    background: #68dff0;
+    color: #fff;
+    padding: 10px 0;
+}
+
+
+.rtl .mobile-clock-widget .bg-svg {
+  left: unset;
+  right: -25px; }
+
+
+.go-top {
+    margin-right: 1%;
+    float: right;
+    background: rgba(255,255,255,.5);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.go-top i {
+    color: #2A3542;
+}
+
+.site-min-height {
+    min-height: 900px;
+}
+
+
+
+/*Clock New */
+
+.clock {
+  width: 30rem;
+  height: 30rem;
+  border: 7px solid #282828;
+  box-shadow: -4px -4px 10px rgba(67,67,67,0.5),
+                inset 4px 4px 10px rgba(0,0,0,0.5),
+                inset -4px -4px 10px rgba(67,67,67,0.5),
+                4px 4px 10px rgba(0,0,0,0.3);
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+  padding: 2rem;
+ 
+}
+
+.outer-clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: #282828;
+  
+ 
+  overflow: hidden;
+}
+
+.outer-clock-face::after {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg)
+}
+
+.outer-clock-face::before,
+.outer-clock-face::after,
+.outer-clock-face .marking{
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background: #1df52f;
+  z-index: 0;
+  left: 49%;
+}
+
+.outer-clock-face .marking {
+  background: #bdbdcb;
+  width: 3px;
+}
+
+.outer-clock-face .marking.marking-one {
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  transform: rotate(30deg)
+}
+
+.outer-clock-face .marking.marking-two {
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  transform: rotate(60deg)
+}
+
+.outer-clock-face .marking.marking-three {
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  transform: rotate(120deg)
+}
+
+.outer-clock-face .marking.marking-four {
+  -webkit-transform: rotate(150deg);
+  -moz-transform: rotate(150deg);
+  transform: rotate(150deg)
+}
+
+.inner-clock-face {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background: #282828;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  z-index: 1;
+}
+
+.inner-clock-face::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  border-radius: 18px;
+  margin-left: -9px;
+  margin-top: -6px;
+  background: #4d4b63;
+  z-index: 11;
+}
+
+.hand {
+  width: 50%;
+  right: 50%;
+  height: 6px;
+  background: #61afff;
+  position: absolute;
+  top: 50%;
+  border-radius: 6px;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hand.hour-hand {
+  width: 30%;
+  z-index: 3;
+}
+
+.hand.min-hand {
+  height: 3px;
+  z-index: 10;
+  width: 40%;
+}
+
+.hand.second-hand {
+  background: #ee791a;
+  width: 45%;
+  height: 2px;
+}
+ .excelButton  {
+  text-transform: uppercase;
+}
+.copyButton  {
+  text-transform: uppercase;
+}
+.printButton  {
+  text-transform: uppercase;
+}

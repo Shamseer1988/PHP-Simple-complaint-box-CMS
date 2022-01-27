@@ -1,0 +1,62 @@
+
+
+@media (max-width: 768px) {
+    .modal-footer .btn {
+        margin-bottom: 0px !important;
+    }
+
+    .btn {
+        margin-bottom: 5px;
+    }
+
+    th, td {
+    font-size: .8rem;
+  }
+
+
+}
+
+
+@media screen and (max-width: 360px) {
+  .datepicker {
+    width: 239px; 
+}
+
+
+   
+  }
+
+@media screen and (max-width: 575px) {
+
+.cal-date-widget .cal-datepicker {
+    margin-top: 15px; }
+}
+
+  
+
+
+@media screen and (max-width: 1199px) {
+
+.cal-date-widget .cal-datepicker {
+    margin-top: 15px; }
+
+}
+
+
+@media screen and (max-width: 1366px) {
+ .cal-date-widget .datepicker {
+    margin: 0 auto;
+    width: unset; }
+
+ }
+
+@media screen and (max-width: 480px) {
+  .cal-date-widget {
+    padding: 30px; }
+
+    
+
+  }
+
+
+  
