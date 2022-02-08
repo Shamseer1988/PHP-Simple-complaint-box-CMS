@@ -36,7 +36,7 @@ $(document).ready(function () {
         $(".input-group-text.current").show();
         $(".input-group-text.current").html("<span class=' text-danger'><i class='fa fa-times-circle'></i></span>");
         if (!(currentPassword.length >= 6 && currentPassword.length <= 250) || currentPassword.length == 0) {
-            $("#currentPass-message").html("<span class=' text-danger'><i class='fa fa-times-circle'></i> Email should be minimum 6 characters</span>");
+            $("#currentPass-message").html("<span class=' text-danger'><i class='fa fa-times-circle'></i> Password should be minimum 6 characters</span>");
             $("#currentPass-message").show();
             $("#currentPassword").css("border", "2px solid #F90A0A");
             $('#changepassword').prop('disabled', true);
